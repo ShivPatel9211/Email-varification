@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+ <h2>This is home page </h2>
+ <div class="card  text-center">
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-info">
+        {{message}}
+    </div>
+    {% endfor %}
+    {% endif %}
+ <a href="{% url 'login' %}" class="btn btn-success">Go to login Page</a>
+ <a href="{% url 'register' %}" class="btn btn-success">Create an account</a>
+ </div>
+{% endblock %}

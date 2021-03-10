@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="global-container text-center">
+    <div class="card login-form ">
+        <div class="card-body">
+            <h1>
+                <div class="card-title text-center"></div>Hurrey Your mail is varified
+            </h1>
+        </div>
+        <div class="card-text text-center">
+            Please Login <br>
+            <a href="{% url 'login_attemp' %}" class="btn btn-success">Go to Login Page</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
